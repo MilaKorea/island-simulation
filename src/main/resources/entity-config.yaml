@@ -1,0 +1,95 @@
+plants:
+  grass:
+    weight: 1.0
+    maxPerCell: 200
+
+animals:
+  wolf:
+    weight: 50.0
+    maxPerCell: 30
+    speed: 3
+    maxFood: 8.0
+
+  boa:
+    weight: 15.0
+    maxPerCell: 30
+    speed: 1
+    maxFood: 3.0
+
+  fox:
+    weight: 8.0
+    maxPerCell: 30
+    speed: 2
+    maxFood: 2.0
+
+  bear:
+    weight: 500.0
+    maxPerCell: 5
+    speed: 2
+    maxFood: 80.0
+
+  eagle:
+    weight: 6.0
+    maxPerCell: 20
+    speed: 3
+    maxFood: 1.0
+
+  horse:
+    weight: 400.0
+    maxPerCell: 20
+    speed: 4
+    maxFood: 60.0
+
+  deer:
+    weight: 300.0
+    maxPerCell: 20
+    speed: 4
+    maxFood: 50.0
+
+  rabbit:
+    weight: 2.0
+    maxPerCell: 150
+    speed: 2
+    maxFood: 0.45
+
+  mouse:
+    weight: 0.05
+    maxPerCell: 500
+    speed: 1
+    maxFood: 0.01
+
+  goat:
+    weight: 60.0
+    maxPerCell: 140
+    speed: 3
+    maxFood: 10.0
+
+  sheep:
+    weight: 70.0
+    maxPerCell: 140
+    speed: 3
+    maxFood: 15.0
+
+  boar:
+    weight: 400.0
+    maxPerCell: 50
+    speed: 2
+    maxFood: 50.0
+
+  buffalo:
+    weight: 700.0
+    maxPerCell: 10
+    speed: 3
+    maxFood: 100.0
+
+  duck:
+    weight: 1.0
+    maxPerCell: 200
+    speed: 4
+    maxFood: 0.15
+
+  caterpillar:
+    weight: 0.01
+    maxPerCell: 1000
+    speed: 0
+    maxFood: 0.0

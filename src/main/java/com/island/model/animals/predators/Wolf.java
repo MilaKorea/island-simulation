@@ -1,4 +1,16 @@
-package com.island.model.animals;
+package com.island.model.animals.predators;
 
-public class Wolf extends Predator{
+import com.island.config.AnimalConfig;
+import com.island.island.Cell;
+import com.island.model.animals.AnimalType;
+
+public class Wolf extends Predator {
+    public Wolf(AnimalConfig config) {
+        super(AnimalType.WOLF, config);
+    }
+
+    @Override
+    public void eat(Cell cell) {
+        // позже
+    }
 }

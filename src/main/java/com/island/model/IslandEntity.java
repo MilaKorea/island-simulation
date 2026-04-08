@@ -1,4 +1,7 @@
 package com.island.model;
 
-public class IslandEntity {
+public interface IslandEntity<T> {
+    boolean isAlive();
+    T getType();
+    int getMaxPerCell();
 }

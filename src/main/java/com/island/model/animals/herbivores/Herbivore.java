@@ -1,8 +1,11 @@
-package com.island.model.animals;
+package com.island.model.animals.herbivores;
 
-public  abstract class Herbivore extends Animal {
+import com.island.config.AnimalConfig;
+import com.island.model.animals.Animal;
+import com.island.model.animals.AnimalType;
 
-    public Herbivore(String name, double weight, int maxPerCell, int speed, double maxFood) {
-        super(name, weight, maxPerCell, speed, maxFood);
+public abstract class Herbivore extends Animal {
+    public Herbivore(AnimalType type, AnimalConfig config) {
+        super(type, config);
     }
 }
