@@ -93,3 +93,83 @@ animals:
     maxPerCell: 1000
     speed: 0
     maxFood: 0.0
+
+food:
+  WOLF:
+    HORSE: 10
+    DEER: 15
+    RABBIT: 60
+    MOUSE: 80
+    GOAT: 60
+    SHEEP: 70
+    BOAR: 15
+    BUFFALO: 10
+    DUCK: 40
+
+  BOA:
+    FOX: 15
+    RABBIT: 20
+    MOUSE: 40
+    DUCK: 10
+
+  FOX:
+    RABBIT: 70
+    MOUSE: 90
+    DUCK: 60
+    CATERPILLAR: 40
+
+  BEAR:
+    BOA: 80
+    HORSE: 40
+    DEER: 80
+    RABBIT: 80
+    MOUSE: 90
+    GOAT: 70
+    SHEEP: 70
+    BOAR: 50
+    BUFFALO: 20
+    DUCK: 10
+
+  EAGLE:
+    FOX: 10
+    RABBIT: 90
+    MOUSE: 90
+    DUCK: 80
+
+  HORSE:
+    PLANT: 100
+
+  DEER:
+    PLANT: 100
+
+  RABBIT:
+    PLANT: 100
+
+  MOUSE:
+    CATERPILLAR: 90
+    PLANT: 100
+
+  GOAT:
+    PLANT: 100
+
+  SHEEP:
+    PLANT: 100
+
+  BOAR:
+    MOUSE: 50
+    CATERPILLAR: 90
+    PLANT: 100
+
+  BUFFALO:
+    PLANT: 100
+
+  DUCK:
+    CATERPILLAR: 90
+    PLANT: 100
+
+  CATERPILLAR:
+    PLANT: 100
+
+plantGrowthPerStep: 2
+reproductionChance: 20
+starvationRate: 0.1

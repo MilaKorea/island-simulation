@@ -21,7 +21,7 @@ public class Island {
     private void initCells() {
         for (int x = 0; x < width; x++) {
             for (int y = 0; y < height; y++) {
-                cells[x][y] = new Cell();
+                cells[x][y] = new Cell(x, y);
             }
         }
     }
@@ -50,5 +50,31 @@ public class Island {
         }
 
         return result;
+    }
+
+    public List<Cell> getAvailableCells (Cell currentCell, int speed, boolean includeCurrentCell) {
+        List<Cell> result = new ArrayList<>();
+
+        int x = currentCell.getX();
+        int y = currentCell.getY();
+
+        if (includeCurrentCell) {
+            result.add(currentCell);
+        }
+
+        for (int step = 1; step <= speed; step++) {
+            addIfExists(result, x - step, y);
+            addIfExists(result, x + step, y);
+            addIfExists(result, x, y - step);
+            addIfExists(result, x, y + step);
+        }
+
+        return result;
+    }
+
+    private void addIfExists(List<Cell> result, int x, int y) {
+        if (x >= 0 && x < width && y >= 0 && y < height) {
+            result.add(cells[x][y]);
+        }
     }
 }

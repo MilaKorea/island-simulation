@@ -9,8 +9,4 @@ public class Fox extends Predator {
         super(AnimalType.FOX, config);
     }
 
-    @Override
-    public void eat(Cell cell) {
-        // later
-    }
 }

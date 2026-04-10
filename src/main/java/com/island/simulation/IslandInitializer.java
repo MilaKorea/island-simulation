@@ -1,4 +1,4 @@
-package com.island.engine;
+package com.island.simulation;
 
 import com.island.factory.AnimalFactory;
 import com.island.factory.PlantFactory;

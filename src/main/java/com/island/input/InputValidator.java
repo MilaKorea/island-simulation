@@ -1,4 +1,4 @@
-package com.island.engine;
+package com.island.input;
 
 import java.util.HashMap;
 import java.util.List;
@@ -50,7 +50,6 @@ public class InputValidator {
         return result;
     }
 
-    // helper внутри валидатора
     public static class CapacityHelper {
 
         public static <T> Map<T, Integer> calculateLimits(

@@ -9,8 +9,5 @@ public class Bear extends Predator {
         super(AnimalType.BEAR, config);
     }
 
-    @Override
-    public void eat(Cell cell) {
-        // later
-    }
+
 }

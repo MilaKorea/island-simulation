@@ -1,8 +1,7 @@
 package com.island.model.animals;
 
-import com.island.island.Cell;
-import com.island.model.IslandEntity;
 import com.island.config.AnimalConfig;
+import com.island.model.IslandEntity;
 
 public abstract class Animal implements IslandEntity<AnimalType> {
 
@@ -23,8 +22,6 @@ public abstract class Animal implements IslandEntity<AnimalType> {
         this.maxFood = config.getMaxFood();
         this.currentFood = this.maxFood;
     }
-
-    public abstract void eat(Cell cell);
 
     public AnimalType getType() {
         return type;
@@ -55,13 +52,31 @@ public abstract class Animal implements IslandEntity<AnimalType> {
         return alive;
     }
 
+    public boolean isHungry() {
+        return currentFood < maxFood;
+    }
+
+    public void restoreFood(double amount) {
+        if (!alive || amount <= 0) {
+            return;
+        }
+
+        currentFood = Math.min(maxFood, currentFood + amount);
+    }
+
     public void die() {
         alive = false;
     }
 
-    public void starve() {
-        currentFood -= maxFood * 0.1;
+    public void starve(double starvationRate) {
+        if (!alive || maxFood == 0) {
+            return;
+        }
+
+        currentFood -= maxFood * starvationRate;
+
         if (currentFood <= 0) {
+            currentFood = 0;
             die();
         }
     }
